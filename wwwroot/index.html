@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>KEA Events</title>
+    <link rel="stylesheet" type="text/css" href="custom.css">	
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+
+  <body>
+  <!-- Header -->
+    <header>
+      <ol class="headerOl">
+	    <li class="inlineLi active"><a href="index.html">KEA Events</a></li>
+	    <li class="inlineLi"><a href="student_initiative.html">Student Initiatives</a></li>
+	    <li class="inlineLi"><a href="about.html">About</a></li>
+	    <li class="inlineLi"><a href="contact.html">Contact</a></li>
+      </ol>	
+    </header>
+
+    <!-- Info text -->
+    <h1>Welcome to KEA Events</h1>
+   
+    <div id="idSubscribe">
+      <p>Find all the events happening at KEA</p> 
+      <button type="button" id="btn-sub" onclick="promtDialog()">Subscribe to the newsletter</button>
+    </div>
+    <br>
+
+    <!-- Video -->
+    <div id="vid">
+      <iframe width="100%" height="550" frameBorder="0" marginwidth="0" src="https://www.youtube.com/embed/Z9I0hRhB5jQ?autoplay=0"></iframe>
+    </div>
+   
+    <!-- Events that are trending right now -->
+    <h2>Trending right now <span style="font-style: italic; color: #42f4d1; font-size: 12px;">join the newsletter for more updates</span></h2>
+  
+    <div id="idTrending">
+      <ul class="marginLeft">
+	    <li><img src="img/icon01.png" id="icon01" width="50" height="50">Event 1 <span style="color: #30d163; font-size: 12px;">Lorem ipsum dolor sit amet, elit rhoncus aliquam dui.</span></li>
+	
+	    <li><img src="img/icon02.png" id="icon02" width="50" height="50">Event 2 <span style="color: #30d163; font-size: 12px;">Lorem ipsum dolor sit amet, elit rhoncus aliquam dui, accumsan ac justo natoque. Ut varius integer</span></li>
+
+	    <li><img src="img/icon03.png" id="icon03" width="50" height="50">Event 3 <span style="color: #30d163; font-size: 12px;">Lorem ipsum dolor sit amet, elit rhoncus aliquam dui, accumsan ac justo natoque.</span></li>
+      </ul>
+    </div>
+
+    <!-- Block of images -->
+    <div id="wierdImgs" class="marginLeft">
+  	  <ul>
+  		<li>
+  		  <img src="img/img01.jpg" width="250px" height="250px">
+  		  <img src="img/img02.jpg" width="250px" height="250px">
+  		  <img src="img/img03.jpg" width="250px" height="250px"></li>
+  		<li>
+  		  <img src="img/img04.png" width="250px" height="250px">
+  		  <img src="img/img05.jpg" width="250px" height="250px">
+  		  <img src="img/img06.jpg" width="250px" height="250px"></li>
+  		<li>	
+  	  </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+	  <ol class="headerOl">
+	    <li class="inlineLi"><a href="#">Go to KEA.dk</a></li>
+	    <li class="inlineLi"><a href="#">Drop us a line!</a></li>
+	    <li class="inlineLi"><a href="#">Become a member</a></li>
+	    <li class="inlineLi"><button type="button" id="btn-see">See more pages</button></li>
+      </ol>
+    </footer>
+
+
+   <!-- Javascript that makes the subscribe button do something -->
+   <script>
+     function promtDialog() {
+       var email = prompt("Please enter your email:", "something@email.com");
+       var txt;
+
+       if (email == null || email == "") {
+         txt = "Subscribe to the newsletter";
+       } else {
+         txt = "Subscribed";
+       }
+       document.getElementById("btn-sub").innerHTML = txt;
+     }
+   </script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+	body {
+		background-color: #2b2d30;
+	}
+
+	h1 {
+		font-size: 24px;
+		display: flex;
+		justify-content: center;
+		margin-top: 5%;
+       font-family: 'Roboto', sans-serif;
+       color: #d3d3d3;
+	}
+
+	h2 {
+       margin-left: 10%;
+       margin-top: 5%;
+       font-family: 'Roboto', sans-serif;
+       color: #d3d3d3;
+	}
+
+	p {
+		font-family: 'Roboto', sans-serif;
+		color: #d3d3d3;
+		font-size: 12px;
+	}
+
+	/* Add margin to the left side */
+	.marginLeft {
+		margin-left: 10%;
+	}
+
+	/* Info and subcribe button under the headline*/
+	#idSubscribe {	
+		display: flex;
+		justify-content: center; 
+	}
+
+    /* Subscribe button under the headline */
+	#btn-sub, #btn-see {
+		margin-left: 10px;
+		background-color: transparent;
+		color: #42f4d1; 
+		border: none;	
+		padding: 5px;
+	}
+
+	/* Header and footer */
+	ol { 
+		list-style-type: none;
+		padding: 0;
+		display:flex;
+        justify-content: center;	
+	}
+
+	ol > li {
+		display:inline-block;
+	  	padding:1%;
+	  	font-family: 'Roboto', sans-serif;
+	}
+
+	ol > li > a {
+		text-decoration: none;
+		color: #30d163;
+	}
+
+	.active {
+		border: 2px solid #30d163;
+	}
+
+	/* Block of images and trending events */
+    ul {
+    	list-style-type: none;
+    	padding: 0;
+    }
+
+    ul > li {
+    	font-family: 'Roboto', sans-serif;
+    	color: #d3d3d3;
+    	font-size: 18px;
+    }
+
+    #icon01, #icon02, #icon03 {
+    	margin-right: 15px;
+    }
+
+
+	
+
+    
+
+    
+
